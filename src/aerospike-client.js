@@ -19,7 +19,6 @@ export class AerospikeWrapper {
     this.client = Aerospike.client({
       hosts: [{ addr: server, port }],
     });
-    console.log(this.client);
   }
 
   async connect() {
