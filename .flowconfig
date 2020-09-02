@@ -1,0 +1,15 @@
+[ignore]
+<PROJECT_ROOT>/dist/.*
+
+[include]
+
+[libs]
+
+[lints]
+sketchy-null=warn
+untyped-type-import=warn
+
+[options]
+esproposal.optional_chaining=enable
+
+[strict]

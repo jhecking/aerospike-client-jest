@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "test": "jest --config ./jest.config.json --runInBand --forceExit"
+  },
+  "dependencies": {
+    "aerospike": "^3.16.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-flow": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "eslint": "^7.8.1",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.132.0",
+    "jest": "^26.4.2"
+  }
+}

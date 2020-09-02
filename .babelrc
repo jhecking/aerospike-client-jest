@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "syntax-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-nullish-coalescing-operator"
+  ],
+  "presets": ["@babel/flow"]
+}
