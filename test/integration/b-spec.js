@@ -4,8 +4,6 @@ import { sleep } from "./util";
 describe("Test Suite B", () => {
   afterAll(async () => {
     await sleep(1000);
-    as.releaseEventLoop();
-    await sleep(1000);
   });
 
   it("Test Case B", async () => {

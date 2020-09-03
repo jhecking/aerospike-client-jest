@@ -5,8 +5,6 @@ const as = require("aerospike");
 describe("Test Suite A", () => {
   afterAll(async () => {
     await sleep(1000);
-    as.releaseEventLoop();
-    await sleep(1000);
   });
 
   it("Test Case A", async () => {
