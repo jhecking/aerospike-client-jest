@@ -1,7 +1,7 @@
 import { AerospikeWrapper } from "../../src/aerospike-client";
 import { sleep } from "./util";
 
-describe("Test Suite B", () => {
+export const testSuiteB = () => describe("Test Suite B", () => {
   afterAll(async () => {
     await sleep(1000);
   });
@@ -17,6 +17,7 @@ describe("Test Suite B", () => {
       await asw.connect();
       await asw.close(false);
       await sleep(1000);
+      expect('Test').toMatch('Test')
     }
   }, 10000);
 });

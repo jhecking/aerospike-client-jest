@@ -9,11 +9,11 @@ const DEFAULT_WRITE_POLICY = new Aerospike.policy.WritePolicy({
 });
 
 export class AerospikeWrapper {
-  namespace: string;
-  set: string;
-  client: Aerospike.Client;
+  namespace;
+  set;
+  client;
 
-  constructor(server: string, port: Number, namespace: string, set: string) {
+  constructor(server, port, namespace, set) {
     this.namespace = namespace;
     this.set = set;
     this.client = Aerospike.client({
@@ -25,15 +25,15 @@ export class AerospikeWrapper {
     await this.client.connect();
   }
 
-  async close(releaseEventLoop: boolean = true) {
+  async close(releaseEventLoop = true) {
     await this.client.close(releaseEventLoop);
   }
 
-  asKey(key: string) {
+  asKey(key) {
     return new Aerospike.Key(this.namespace, this.set, key);
   }
 
-  put(key: string, value: any) {
+  put(key, value) {
     return this.client.put(
       this.asKey(key),
       { value },
@@ -42,11 +42,11 @@ export class AerospikeWrapper {
     );
   }
 
-  get(key: string) {
+  get(key) {
     return this.client.get(this.asKey(key));
   }
 
-  remove(key: string) {
+  remove(key) {
     return this.client.remove(this.asKey(key));
   }
 }
