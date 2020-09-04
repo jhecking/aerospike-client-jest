@@ -1,3 +1,4 @@
 {
-  "testRegex": "seq-test\\.js?$"
+  "testRegex": "seq-test\\.js?$",
+  "globalTeardown": "./test/teardown"
 }

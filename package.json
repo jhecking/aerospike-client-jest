@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest --config ./jest.config.json --forceExit"
+    "test": "jest --config ./jest.config.json"
   },
   "dependencies": {
     "aerospike": "^3.16.1"
