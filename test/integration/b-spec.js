@@ -2,10 +2,6 @@ import { AerospikeWrapper } from "../../src/aerospike-client";
 import { sleep } from "./util";
 
 export const testSuiteB = () => describe("Test Suite B", () => {
-  afterAll(async () => {
-    await sleep(1000);
-  });
-
   it("Test Case B", async () => {
     for (let i = 0; i < 5; i++) {
       const asw = new AerospikeWrapper(
